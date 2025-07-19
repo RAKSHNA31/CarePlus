@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarePlus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">CarePlus</div>
+      <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="profile-btn">Profile</a></li>
+      </ul>
+      <button class="signup-btn">Sign Up</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your Trusted Caretaking Service</h1>
+      <p>Supporting headline that explains your app's mission</p>
+      <div class="cta-buttons">
+        <button onclick="selectRole('caretaker')">Become a Caretaker</button>
+        <button onclick="selectRole('guardian')">Book a Caretaker</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="role-selection" id="role-selection">
+    <h2>Select Your Role</h2>
+    <div class="roles">
+      <button onclick="selectForm('patient')">Patient</button>
+      <button onclick="selectForm('guardian')">Guardian</button>
+    </div>
+  </section>
+
+  <section class="forms">
+    <form id="patient-form" class="hidden">
+      <h3>Patient Details</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="number" placeholder="Age" required>
+      <select><option>Gender</option><option>Male</option><option>Female</option></select>
+      <input type="text" placeholder="Medical History">
+      <input type="text" placeholder="Emergency Contact">
+      <button type="submit">Proceed</button>
+    </form>
+
+    <form id="guardian-form" class="hidden">
+      <h3>Guardian Details</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Relationship" required>
+      <input type="text" placeholder="Phone Number" required>
+      <button type="submit">Proceed</button>
+    </form>
+  </section>
+
+  <section class="services">
+    <h2>Services Offered</h2>
+    <div class="service-cards">
+      <div class="card">Babysitting</div>
+      <div class="card">Elder Care</div>
+      <div class="card">Physical Help</div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">Select Role</div>
+      <div class="step">Enter Details</div>
+      <div class="step">Choose Service</div>
+      <div class="step">Book Caretaker</div>
+      <div class="step">Get Confirmation</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">"Great experience!" - A User</div>
+      <div class="testimonial">"Safe and professional care!" - Another User</div>
+    </div>
+  </section>
+
+  <section class="verified-caregivers">
+    <h2>Our Verified Caregivers</h2>
+    <div class="grid">
+      <div class="card">👤</div>
+      <div class="card">👤</div>
+      <div class="card">👤</div>
+      <div class="card">👤</div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">What is CarePlus?</div>
+      <div class="faq-item">How do I become a caretaker?</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>Contact Us</div>
+      <div>Address</div>
+      <div>Cities Available</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
